@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		05C14D2B1CC2FDA200FB5128 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C14D2A1CC2FDA200FB5128 /* AppDelegate.swift */; };
-		05C14D2D1CC2FDA200FB5128 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C14D2C1CC2FDA200FB5128 /* ViewController.swift */; };
 		05C14D301CC2FDA200FB5128 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05C14D2E1CC2FDA200FB5128 /* Main.storyboard */; };
 		05C14D321CC2FDA200FB5128 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C14D311CC2FDA200FB5128 /* Assets.xcassets */; };
 		05C14D351CC2FDA200FB5128 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05C14D331CC2FDA200FB5128 /* LaunchScreen.storyboard */; };
+		05C14D411CC300CD00FB5128 /* AddLoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C14D3F1CC300CD00FB5128 /* AddLoadViewController.swift */; };
+		05C14D421CC300CD00FB5128 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C14D401CC300CD00FB5128 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		05C14D271CC2FDA100FB5128 /* BackgroundTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackgroundTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C14D2A1CC2FDA200FB5128 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		05C14D2C1CC2FDA200FB5128 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		05C14D2F1CC2FDA200FB5128 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05C14D311CC2FDA200FB5128 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05C14D341CC2FDA200FB5128 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05C14D361CC2FDA200FB5128 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05C14D3F1CC300CD00FB5128 /* AddLoadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLoadViewController.swift; sourceTree = "<group>"; };
+		05C14D401CC300CD00FB5128 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		05C14D291CC2FDA200FB5128 /* BackgroundTest */ = {
 			isa = PBXGroup;
 			children = (
+				05C14D3E1CC300CD00FB5128 /* Controllers */,
 				05C14D2A1CC2FDA200FB5128 /* AppDelegate.swift */,
-				05C14D2C1CC2FDA200FB5128 /* ViewController.swift */,
-				05C14D2E1CC2FDA200FB5128 /* Main.storyboard */,
 				05C14D311CC2FDA200FB5128 /* Assets.xcassets */,
-				05C14D331CC2FDA200FB5128 /* LaunchScreen.storyboard */,
 				05C14D361CC2FDA200FB5128 /* Info.plist */,
+				05C14D331CC2FDA200FB5128 /* LaunchScreen.storyboard */,
+				05C14D2E1CC2FDA200FB5128 /* Main.storyboard */,
 			);
 			path = BackgroundTest;
+			sourceTree = "<group>";
+		};
+		05C14D3E1CC300CD00FB5128 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				05C14D3F1CC300CD00FB5128 /* AddLoadViewController.swift */,
+				05C14D401CC300CD00FB5128 /* HomeViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05C14D2D1CC2FDA200FB5128 /* ViewController.swift in Sources */,
+				05C14D421CC300CD00FB5128 /* HomeViewController.swift in Sources */,
+				05C14D411CC300CD00FB5128 /* AddLoadViewController.swift in Sources */,
 				05C14D2B1CC2FDA200FB5128 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BackgroundTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.bakeddean.BackgroundTest;
@@ -260,6 +273,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BackgroundTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.bakeddean.BackgroundTest;
