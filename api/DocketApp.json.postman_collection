@@ -1,0 +1,210 @@
+{
+	"id": "30e649af-10a5-a530-70d0-3acdd11f0e4d",
+	"name": "DocketApp",
+	"description": "",
+	"order": [
+		"8ab548fb-899a-3ea4-4853-56e5d450e3e3",
+		"94a68668-6263-231b-c10f-cced5c202e20",
+		"dfdc02c9-5458-2c34-9f28-768bfd83b819",
+		"b1f61e97-bfd7-ccd1-c22c-033cef984433",
+		"870c9177-5917-484b-4525-93ce1b25108f",
+		"10d75b07-d7a8-7f3f-0b34-3427b3772716",
+		"f6ecc392-7b0a-a74c-fae6-a671cc5df48e"
+	],
+	"folders": [],
+	"timestamp": 1459294180468,
+	"owner": 0,
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "10d75b07-d7a8-7f3f-0b34-3427b3772716",
+			"headers": "Content-Type: application/json\nDeviceId: abc123456786\nAuthorization: apikey eR6cIZYg3Soh87r65s654MN2491u1A3O\n",
+			"url": "{{URL}}/api/register",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1460073670767,
+			"name": "api/register",
+			"description": "register device",
+			"collectionId": "30e649af-10a5-a530-70d0-3acdd11f0e4d",
+			"responses": [],
+			"rawModeData": "{\r\n    \"PIN\": 123455\r\n}"
+		},
+		{
+			"id": "870c9177-5917-484b-4525-93ce1b25108f",
+			"headers": "DeviceId: abc123456786\nAuthorization: apikey eR6cIZYg3Soh87r65s654MN2491u1A3O\n",
+			"url": "{{URL}}/api/settings?lastUpdated=2016-04-06T15:44:39.4170000",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1459915022982,
+			"name": "api/settings?lastupdated",
+			"description": "get settings",
+			"collectionId": "30e649af-10a5-a530-70d0-3acdd11f0e4d",
+			"responses": []
+		},
+		{
+			"id": "8ab548fb-899a-3ea4-4853-56e5d450e3e3",
+			"headers": "DeviceId: abc123456786\nAuthorization: apikey eR6cIZYg3Soh87r65s654MN2491u1A3O\n",
+			"url": "{{URL}}/api/branches",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1459824878818,
+			"name": "api/branches",
+			"description": "get the list of branches for the device (country specific)",
+			"collectionId": "30e649af-10a5-a530-70d0-3acdd11f0e4d",
+			"responses": []
+		},
+		{
+			"id": "94a68668-6263-231b-c10f-cced5c202e20",
+			"headers": "DeviceId: abc123456786\nAuthorization: apikey eR6cIZYg3Soh87r65s654MN2491u1A3O\n",
+			"url": "{{URL}}/api/carriers",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1459824882240,
+			"name": "api/carriers",
+			"description": "get carriers that have been added / changed since the last updated date.",
+			"collectionId": "30e649af-10a5-a530-70d0-3acdd11f0e4d",
+			"responses": []
+		},
+		{
+			"id": "b1f61e97-bfd7-ccd1-c22c-033cef984433",
+			"headers": "DeviceId: abc123456786\nAuthorization: apikey eR6cIZYg3Soh87r65s654MN2491u1A3O\n",
+			"url": "{{URL}}/api/settings",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1459824880364,
+			"name": "api/settings",
+			"description": "get settings",
+			"collectionId": "30e649af-10a5-a530-70d0-3acdd11f0e4d",
+			"responses": []
+		},
+		{
+			"id": "dfdc02c9-5458-2c34-9f28-768bfd83b819",
+			"headers": "DeviceId: abc123456786\nAuthorization: apikey eR6cIZYg3Soh87r65s654MN2491u1A3O\n",
+			"url": "{{URL}}/api/carriers?lastUpdated=2015-09-02T07:28:39.1270000",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1459824883864,
+			"name": "api/carriers?lastupdated",
+			"description": "get carriers that have been added / changed since the last updated date.",
+			"collectionId": "30e649af-10a5-a530-70d0-3acdd11f0e4d",
+			"responses": []
+		},
+		{
+			"id": "f6ecc392-7b0a-a74c-fae6-a671cc5df48e",
+			"headers": "DeviceId: abc123456786\nAuthorization: apikey eR6cIZYg3Soh87r65s654MN2491u1A3O\n",
+			"url": "{{URL}}/api/load",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "Dkt1",
+					"value": {
+						"0": {}
+					},
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "Dkt1_Pkt1",
+					"value": {
+						"0": {}
+					},
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "Destination",
+					"value": "NPE",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Carrier",
+					"value": "AKITIO",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "TruckRego",
+					"value": "reg1238",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "FleetNumber",
+					"value": "67853",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Driver",
+					"value": "Rob",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Dkt1_Pkt2",
+					"value": {
+						"0": {}
+					},
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1460495012231,
+			"name": "api/load",
+			"description": "send in load",
+			"collectionId": "30e649af-10a5-a530-70d0-3acdd11f0e4d",
+			"responses": []
+		}
+	]
+}
