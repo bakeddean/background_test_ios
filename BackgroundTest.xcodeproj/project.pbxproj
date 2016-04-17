@@ -102,8 +102,7 @@
 				05C14D481CC309BE00FB5128 /* NetworkManager.swift */,
 				05C14D4A1CC3205D00FB5128 /* Logger.swift */,
 			);
-			name = Services;
-			path = Controllers/Services;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		399647B6F0F962A7A0166DF7 /* Frameworks */ = {
